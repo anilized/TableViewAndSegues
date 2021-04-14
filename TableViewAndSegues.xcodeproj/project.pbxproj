@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		675D1D6026277696004DD81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675D1D5F26277696004DD81A /* AppDelegate.swift */; };
 		675D1D6226277696004DD81A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675D1D6126277696004DD81A /* SceneDelegate.swift */; };
-		675D1D6426277696004DD81A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675D1D6326277696004DD81A /* ViewController.swift */; };
 		675D1D6726277696004DD81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675D1D6526277696004DD81A /* Main.storyboard */; };
 		675D1D6926277696004DD81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675D1D6826277696004DD81A /* Assets.xcassets */; };
 		675D1D6C26277696004DD81A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675D1D6A26277696004DD81A /* LaunchScreen.storyboard */; };
+		675D1D7726277869004DD81A /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675D1D7626277869004DD81A /* EmojiTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		675D1D5C26277696004DD81A /* TableViewAndSegues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewAndSegues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		675D1D5F26277696004DD81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		675D1D6126277696004DD81A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		675D1D6326277696004DD81A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		675D1D6626277696004DD81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		675D1D6826277696004DD81A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		675D1D6B26277696004DD81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		675D1D6D26277696004DD81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		675D1D7626277869004DD81A /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				675D1D5F26277696004DD81A /* AppDelegate.swift */,
 				675D1D6126277696004DD81A /* SceneDelegate.swift */,
-				675D1D6326277696004DD81A /* ViewController.swift */,
 				675D1D6526277696004DD81A /* Main.storyboard */,
+				675D1D7626277869004DD81A /* EmojiTableViewController.swift */,
 				675D1D6826277696004DD81A /* Assets.xcassets */,
 				675D1D6A26277696004DD81A /* LaunchScreen.storyboard */,
 				675D1D6D26277696004DD81A /* Info.plist */,
@@ -137,8 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				675D1D6426277696004DD81A /* ViewController.swift in Sources */,
 				675D1D6026277696004DD81A /* AppDelegate.swift in Sources */,
+				675D1D7726277869004DD81A /* EmojiTableViewController.swift in Sources */,
 				675D1D6226277696004DD81A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anilcan.TableViewAndSegues;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +315,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anilcan.TableViewAndSegues;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
