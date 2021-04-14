@@ -31,7 +31,9 @@
                             <outlet property="delegate" destination="6O4-Y7-GEi" id="g0J-Dv-euF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Emoji Dictionary" id="Izw-9Y-xKm"/>
+                    <navigationItem key="navigationItem" title="Emoji Dictionary" id="Izw-9Y-xKm">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="U9t-Wd-kCx"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="dKC-lH-x2k" kind="show" identifier="DefSegue" id="lsz-5j-yQl"/>
                     </connections>
@@ -40,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="692.75362318840587" y="105.80357142857143"/>
         </scene>
-        <!--View Controller-->
+        <!--Emoji Detail View Controller-->
         <scene sceneID="aV3-Xr-Zvb">
             <objects>
-                <viewController id="dKC-lH-x2k" sceneMemberID="viewController">
+                <viewController id="dKC-lH-x2k" customClass="EmojiDetailViewController" customModule="TableViewAndSegues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JzK-EJ-aVf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,6 +75,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qzx-IQ-ybz"/>
+                    <connections>
+                        <outlet property="blowUpEmojiLabel" destination="pvv-yR-eX8" id="6PB-U3-uiu"/>
+                        <outlet property="emojiDescLabel" destination="zoI-Wu-b0w" id="d5o-dK-iiF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Kx-9d-GG5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
