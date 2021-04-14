@@ -37,5 +37,13 @@ class EmojiTableViewController: UITableViewController {
 
         return cell
     }
+    
+    
+    //MARK: - Adding Segue for detail screen of selected Table View cell
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Performing segue
+        performSegue(withIdentifier: "DefSegue", sender: nil)
+    }
 
 }
