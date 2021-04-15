@@ -9,7 +9,7 @@ import UIKit
 
 class EmojiTableViewController: UITableViewController {
 
-    let emojiArray = ["🏎", "⛪️", "😦"]
+    let emojiArray = getEmojis()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class EmojiTableViewController: UITableViewController {
 
         // Configure the cell with emoji and it's system name
         
-        cell.textLabel?.text = "\(emojiArray[indexPath.row]) \(emojiArray[indexPath.row].unicodeScalars.first!.properties.name!.capitalized)"
+        cell.textLabel?.text = "\(emojiArray[indexPath.row].character) - \(emojiArray[indexPath.row].desc)"
 
         return cell
     }
@@ -50,9 +50,17 @@ class EmojiTableViewController: UITableViewController {
     //MARK: - Sending data to EmojiDetailViewController
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let descVC = segue.destination as! EmojiDetailViewController
-        let currentEmoji = sender as! String
-        descVC.emoji = currentEmoji
+        
+        //MARK: - IF LET DESC: If segue.destination is a type of EmojiDetailViewController then set it to a descVC constant and do your job.
+        //Else just pass
+        
+        if let descVC = segue.destination as? EmojiDetailViewController{
+            if let currentEmoji = sender as? Emoji {
+                descVC.emoji = currentEmoji
+            }
+            
+        }
+        
     }
 
 }

@@ -14,24 +14,16 @@ class EmojiDetailViewController: UIViewController {
     
     @IBOutlet weak var emojiDescLabel: UILabel!
     
-    var emoji = "✈️"
+    var emoji: Emoji = Emoji()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        blowUpEmojiLabel.text = emoji
-        
+        blowUpEmojiLabel.text = emoji.character
+        emojiDescLabel.text = "The \(emoji.character) emoji is a \(emoji.desc). It has made in \(emoji.year). It's in \(emoji.category) category. It has ration of \(emoji.rating)"
         // let emojiArray = ["🏎", "⛪️", "😦"]
         
-        if emoji == "🏎" {
-            emojiDescLabel.text = "Wow such a cool swift racing car."
-        }
-        if emoji == "⛪️" {
-            emojiDescLabel.text = "It's a fancy church."
-        }
-        if emoji == "😦" {
-            emojiDescLabel.text = "I'm sad 2nite."
-        }
+        
     }
     
 
